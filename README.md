@@ -16,13 +16,36 @@ The project aims to develop two varieties of filtering systems, primarily:
 We aim to utilize the following parameters as base quantifiers for word recommendations for the above algorithms. We will first analyze the Stereotypes/Demographics-Based Filtering and Item-Based Filtering:
 
 1. Unused Words
-2. Words that are confusing together
-3. Frequently mistaken words
+2. Frequently mistaken words
+3. Words that are confusing together
 
 For the User-Based Filtering and Item-Based Filtering, we aim to analyze the following parameters:
 
 1. Unused Words
-2. Words that are easily forgotten
-3. Frequently mistaken words
+2. Frequently mistaken words
+3. Words that are easily forgotten
 
-## Methodology Implemented
+## Methodology Implemented:
+
+### Parameters Established:
+
+#### A. Unused Words:
+
+For unused words an empty of array containing count frequency of each of the words can be applied.
+
+#### B. Frequently Mistaken Words:
+
+A count frequency of number of times a word is mistaken can be computed for each recommendation dispensed.
+
+#### C. Algorithm Specific:
+
+##### i. Words that are confusing together:
+
+A matrix of `number_of_words x number_of_words` can be initialized and updated for every selection of 20 words presented. This would allow accurate comparison of words frequently confused between one-another.
+
+##### ii. Words that are easily forgotten:
+
+For easily forgotten words an empty array containing the count frequency of the number of times the words has been incorrect.
+
+## Recommendation Computation:
+
