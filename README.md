@@ -13,3 +13,16 @@ The project aims to develop two varieties of filtering systems, primarily:
 
 ## Parameters of Concern:
 
+We aim to utilize the following parameters as base quantifiers for word recommendations for the above algorithms. We will first analyze the Stereotypes/Demographics-Based Filtering and Item-Based Filtering:
+
+1. Unused Words
+2. Words that are confusing together
+3. Frequently mistaken words
+
+For the User-Based Filtering and Item-Based Filtering, we aim to analyze the following parameters:
+
+1. Unused Words
+2. Words that are easily forgotten
+3. Frequently mistaken words
+
+## Methodology Implemented
