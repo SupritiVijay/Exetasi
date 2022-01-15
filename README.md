@@ -49,4 +49,4 @@ For easily forgotten words an empty array containing the count frequency of the 
 
 ## Recommendation Computation:
 
-<img src="https://render.githubusercontent.com/render/math?math=%5CHuge%0A%5Cbegin%7Balign*%7D%0Ax%26%3D1%5C%5C%0Ax%2By%26%3D2%5C%5C%0AP%26%3D%5Cbegin%7Bbmatrix%7Dp_1%5C%5Cp_2%5Cend%7Bbmatrix%7D%0A%5Cend%7Balign*%7D">
+<img src="https://render.githubusercontent.com/render/math?math=%5Ccolor%7Bred%7D%0A%5Cbegin%7Balign*%7D%0Ax%26%3D1%5C%5C%0Ax%2By%26%3D2%5C%5C%0AP%26%3D%5Cbegin%7Bbmatrix%7Dp_1%5C%5Cp_2%5Cend%7Bbmatrix%7D%0A%5Cend%7Balign*%7D">
