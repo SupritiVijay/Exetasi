@@ -8,8 +8,8 @@ This project aims to develop a Life-Long learning Recommendation System for GRE 
 3. Stereotypes/Demographics-Based Filtering
 
 The project aims to develop two varieties of filtering systems, primarily:
-1. User-Based Filtering and Item-Based Filtering: This methodology would better supplement traditional Item-Based Filtering with User-Based Filtering to provide revision schemes for individual/targetted students.
-2. Stereotypes/Demographics-Based Filtering and Item-Based Filtering: This methodology aims to encapsulate a broad selection of weak words for a larger demographic. This filtering methodology aims to be readily deployable in a public setting, where a large number of people will be accessing and using the project.
+1. **User-Based Filtering and Item-Based Filtering:** This methodology would better supplement traditional Item-Based Filtering with User-Based Filtering to provide revision schemes for individual/targetted students.
+2. **Stereotypes/Demographics-Based Filtering and Item-Based Filtering:** This methodology aims to encapsulate a broad selection of weak words for a larger demographic. This filtering methodology aims to be readily deployable in a public setting, where a large number of people will be accessing and using the project.
 
 ## Parameters of Concern:
 
