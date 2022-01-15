@@ -54,3 +54,17 @@ For easily forgotten words an empty array containing the count frequency of the 
 ![Formula](./assets/images/formula.jpg)
 
 The input parameters `N` and `α` determine the randomity and repetition of words, as well as the choice of `N` determines the size of confusion clusters which may be developed. As the matrices, are time dependent variables, a momentum based computation may be used to update the incorrectly selected words. While the confusion matrix and the unused words array will both remain intact, as they do not expect periodic alterations.
+
+## Deployment:
+
+Streamlit
+
+## Tech-Stack:
+
+1. Python
+2. Streamlit
+3. Twitter-Link-Sharing
+
+## Impact:
+
+The project aims to develop a single unit recommendation system to help practice for GRE Vocabulary! It provides a testing platform for practicing and polishing your vocabulary skills.
