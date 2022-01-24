@@ -20,7 +20,7 @@ def generate_wordcloud():
 	wordcloud = WordCloud(width=900,height=250,background_color='white',max_words=25,relative_scaling=1,normalize_plurals=False).generate_from_frequencies(word_frequency)
 	return wordcloud
 
-@st.cache(ttl=60*5)
+@st.cache(ttl=60*10)
 def get_word_lists(N):
 	r = Recommender(N)
 	word_list = r.recommend()
@@ -65,6 +65,31 @@ def app(N=10):
 			st.success("You got a Score of:\t" +str(round(100*performance_p, 2))+"% Congratulations!")
 			link = "https://twitter.com/intent/tweet?text=Exetasi%20Score:%20"+str(sum(performance))+"%20Out%20of%2010%21%0A%0ACheck%20Out%20Exetasi%20below%3A&hashtags=exetasi&url="+streamlit_url
 			st.markdown("[Post on Twitter]("+link+")")
+			st.markdown("---")
+			st.markdown("## Detailed Analysis")
+			st.markdown("### Correct Words:")
+			st.success(" | ".join([i for i,j in zip(word_list.T[0], responses) if i==j]))
+			st.markdown("### Incorrect Words")
+			col_definition, col_appropriate, col_chosen = st.columns([3, 1, 1])
+			with col_definition:
+				st.markdown("#### Definition")
+			with col_appropriate:
+				st.markdown("#### Correct Response")
+			with col_chosen:
+				st.markdown("#### Your Response")
+			definitions = [word_list[i][2] for i in range(N) if word_list[i][0]!=responses[i]]
+			appropriate = [word_list[i][0] for i in range(N) if word_list[i][0]!=responses[i]]
+			chosen = [responses[i] for i in range(N) if word_list[i][0]!=responses[i]]
+			expenders_details = [st.expander(' ', expanded=True) for i in range(len(chosen))]
+			for index_details, expander_details in enumerate(expenders_details):
+				col_definition, col_appropriate, col_chosen = st.columns([3, 1, 1])
+				with col_definition:
+					st.info(definitions[index_details])
+				with col_appropriate:
+					st.warning(appropriate[index_details])
+				with col_chosen:
+					st.error(chosen[index_details])
+
 
 if __name__ == '__main__':
 	app()
