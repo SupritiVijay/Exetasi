@@ -8,7 +8,7 @@ from stqdm import stqdm
 from recommender import Recommender
 from update import update_recommender
 
-streamlit_url = "https://stackoverflow.com/"
+streamlit_url = "https://github.com/SupritiVijay/Exetasi"
 
 @st.cache
 def generate_wordcloud():
