@@ -29,7 +29,7 @@ def get_word_lists(N):
 	return word_list, words
 
 def app(N=10):
-	st.sidebar.markdown('![img](./assets/images/moving_logo.gif)')
+	st.sidebar.image('./assets/logo.png', use_column_width=500, width=300)
 	st.sidebar.markdown("We present to you, **Exétasi**, an app for learning and revising vocabulary for the GRE tests.")
 	st.sidebar.write("This project aims to develop a Life-Long learning Recommendation System for GRE word recommendation.")
 	wordcloud = generate_wordcloud()
