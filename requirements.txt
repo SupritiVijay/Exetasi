@@ -1,1 +1,3 @@
 wordcloud==1.8.1
+stqdm==0.0.4
+tqdm==4.61.1
